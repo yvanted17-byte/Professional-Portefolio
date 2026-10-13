@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yvan Tedongmo - DevOps Portfolio</title>
-    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="CSSportefolio.css">
 </head>
 <body>
-
-<div class="container">
-
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    
+<div id="home" class="container">
     <section class="hero">
         <div class="hero-text">
             <div class="subtitle">Aspiring DevOps</div>
             <h1>TEDONGMO<br>NGUIMDO<br>YVAN</h1>
             <div class="role">Building clean code & intuitive digital experiences</div>
-            <div class="social-links">
+            <div id="contact" class="social-links">
                 <a href="https://www.linkedin.com/in/yvan-nguimdo-875704421/">LinkedIn</a>
                 <a href="https://github.com/yvanted17-byte">GitHub</a>
                 <a href="https://discordapp.com/users/1515072339149066261">Discord</a>
@@ -28,8 +37,46 @@
             <img src="Documents/img1.png" alt="img1">
         </div>
     </section>
+    <section id="about" class="grid-2">
+        <div class="card">
+            <h2>About Me</h2>
+            <h3 style="color:#A9C6D9; margin-bottom:0.5rem;">RPTU Kaiserslautern</h3>
+            <p>I’m a motivated learner who wants to improve his development skills. Every day I work step by step to reach my goal. This portfolio shows my daily evolution, coded based on my research and competences I learned.</p>
+            <p>I'm a student at the RPTU Kaiserslautern and an active member of JustCode. I'm interested in internships and open for work, as I want to learn how to work in a professional atmosphere to prepare for a better career.</p>
+            <p><strong>Education:</strong> Bachelor, Expected 2028</p>
+            <div class="tags">
+                <span class="tag">Problem Solving</span>
+                <span class="tag">Clean Architecture</span>
+                <span class="tag">Teamwork</span>
+            </div>
+        </div>
 
-    <section class="grid-2">
+        <div id="projects" class="card">
+            <h2>Projects</h2>
+            <div id="project" class="project-list">
+                <div class="project-item">
+                    <h3>Professional Portfolio</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                    <p>Developed a personal portfolio website to showcase my skills and projects.</p>
+                    <a href="https://github.com/yvanted17-byte/Professional-Portefolio">View on GitHub &rarr;</a>
+                </div>
+                <div class="project-item">
+                    <h3>Frontend-dev-Justcode</h3>
+                    <p><strong>Tech Stack:</strong> Frontend Web App Development</p>
+                    <p>Learned front-end development and applied it to build a professional portfolio interface.</p>
+                    <a href="https://github.com/yvanted17-byte/Frontend-dev-Justcode">View Project &rarr;</a>
+                </div>
+                <div class="project-item">
+                    <h3>Python Development</h3>
+                    <p><strong>Tech Stack:</strong> Python, Automation</p>
+                    <p>Scripting and development projects focusing on backend logic and automation.</p>
+                    <a href="https://github.com/yvanted17-byte/Python">View on GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="grid-2">
         <div class="card card-blue">
             <h2>Social & Coding Stats</h2>
             <div class="stats-grid">
@@ -75,45 +122,6 @@
             </div>
         </div>
     </section>
-    <section class="grid-2">
-        <div class="card">
-            <h2>About Me</h2>
-            <h3 style="color:#A9C6D9; margin-bottom:0.5rem;">RPTU Kaiserslautern</h3>
-            <p>I’m a motivated learner who wants to improve his development skills. Every day I work step by step to reach my goal. This portfolio shows my daily evolution, coded based on my research and competences I learned.</p>
-            <p>I'm a student at the RPTU Kaiserslautern and an active member of JustCode. I'm interested in internships and open for work, as I want to learn how to work in a professional atmosphere to prepare for a better career.</p>
-            <p><strong>Education:</strong> Bachelor, Expected 2028</p>
-            <div class="tags">
-                <span class="tag">Problem Solving</span>
-                <span class="tag">Clean Architecture</span>
-                <span class="tag">Teamwork</span>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="card">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Professional Portfolio</h3>
-                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-                    <p>Developed a personal portfolio website to showcase my skills and projects.</p>
-                    <a href="https://github.com/yvanted17-byte/Professional-Portefolio">View on GitHub &rarr;</a>
-                </div>
-                <div class="project-item">
-                    <h3>Frontend-dev-Justcode</h3>
-                    <p><strong>Tech Stack:</strong> Frontend Web App Development</p>
-                    <p>Learned front-end development and applied it to build a professional portfolio interface.</p>
-                    <a href="https://github.com/yvanted17-byte/Frontend-dev-Justcode">View Project &rarr;</a>
-                </div>
-                <div class="project-item">
-                    <h3>Python Development</h3>
-                    <p><strong>Tech Stack:</strong> Python, Automation</p>
-                    <p>Scripting and development projects focusing on backend logic and automation.</p>
-                    <a href="https://github.com/yvanted17-byte/Python">View on GitHub &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="grid-2">
         <div class="card">
@@ -130,7 +138,6 @@
             </div>
         </div>
 
-        <!-- Featured Project / Award -->
         <div class="featured">
             <h3>Featured Highlight</h3>
             <h2 style="font-size:2rem;">Daily Evolution</h2>
